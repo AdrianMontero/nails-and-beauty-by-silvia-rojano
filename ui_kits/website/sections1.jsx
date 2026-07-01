@@ -94,8 +94,8 @@ function About() {
     <section id="sobre" style={{ padding: "clamp(56px,8vw,110px) var(--gutter)", background: "var(--bg-page)" }}>
       <div style={{ maxWidth: "var(--container)", margin: "0 auto", display: "grid", gridTemplateColumns: "0.9fr 1.1fr", gap: "clamp(32px,5vw,80px)", alignItems: "center" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
-          <SmartImg src={D.gallery[3]} alt="Uñas rosas by Silvia Rojano" style={{ width: "100%", aspectRatio: "3/4", objectFit: "cover", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-sm)" }} />
-          <SmartImg src={D.gallery[5]} alt="Diseño de leopardo by Silvia Rojano" style={{ width: "100%", aspectRatio: "3/4", objectFit: "cover", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-sm)", marginTop: "32px" }} />
+          <SmartImg src={D.gallery[1]} alt="Uñas rosas by Silvia Rojano" style={{ width: "100%", aspectRatio: "3/4", objectFit: "cover", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-sm)" }} />
+          <SmartImg src={D.gallery[3]} alt="Diseño de leopardo by Silvia Rojano" style={{ width: "100%", aspectRatio: "3/4", objectFit: "cover", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-sm)", marginTop: "32px" }} />
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
           <SRHeading align="left" eyebrow="Sobre Silvia" title="Un salón hecho a mano, con alma" lead="En pleno corazón de Marratxí, Silvia Rojano transforma cada manicura, pedicura y tratamiento en un momento de calma. Técnica impecable, materiales de primera y una atención que sus clientas describen como «estar entre amigas»." />

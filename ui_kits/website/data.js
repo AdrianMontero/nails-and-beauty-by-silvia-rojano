@@ -27,8 +27,6 @@
     hero: CDN + "/biz_photo/cdb813ba5bfd45b1b0db9497e64d5b-nails-and-beauty-by-silvia-roj-biz-photo-f37566cf147d419c909fe013ad1fb1-booksy.jpeg",
     gallery: [
       CDN + "/inspiration/7b6d90c79aab40f091caeae316e3a9-nails-and-beauty-by-silvia-roj-inspiration-041eac82651048feacf8115e52e5b6-booksy.jpeg?size=640x0",
-      CDN + "/inspiration/7037c0e0c09a49eb9b9e677494b20e-nails-and-beauty-by-silvia-roj-inspiration-fb713d485375444a9db386ffb2286b-booksy.jpeg?size=640x0",
-      CDN + "/inspiration/9fba95d3b1cc4321aa96331c2e4015-nails-and-beauty-by-silvia-roj-inspiration-eec563e8bf3e47bab4d57a0ed7e3d1-booksy.jpeg?size=640x0",
       CDN + "/inspiration/9bfa8b86309244bb8319ad83dee904-nails-and-beauty-by-silvia-roj-inspiration-a531b9d4594b43059441f02ab968c2-booksy.jpeg?size=640x0",
       CDN + "/inspiration/b960f718ed2b40e9a5b95b3a31bae5-nails-and-beauty-by-silvia-roj-inspiration-e3ffc63e43224f4490d40391af256b-booksy.jpeg?size=640x0",
       CDN + "/inspiration/d50002a566274e4ba9a2b5998a257b-nails-and-beauty-by-silvia-roj-inspiration-95f71c0affcb4aa3ab0dce97a5803a-booksy.jpeg?size=640x0",

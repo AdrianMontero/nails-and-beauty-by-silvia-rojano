@@ -79,6 +79,43 @@ function Reviews() {
   );
 }
 
+function InstagramEmbeds({ posts }) {
+  React.useEffect(() => {
+    if (!posts || !posts.length) return undefined;
+    const run = () => { if (window.instgrm && window.instgrm.Embeds) window.instgrm.Embeds.process(); };
+    if (window.instgrm && window.instgrm.Embeds) { run(); return undefined; }
+    let s = document.getElementById("sr-ig-embed");
+    if (!s) {
+      s = document.createElement("script");
+      s.id = "sr-ig-embed";
+      s.async = true;
+      s.src = "https://www.instagram.com/embed.js";
+      document.body.appendChild(s);
+    }
+    s.addEventListener("load", run);
+    let n = 0;
+    const t = setInterval(() => {
+      if (window.instgrm && window.instgrm.Embeds) { run(); clearInterval(t); }
+      else if (++n > 25) clearInterval(t);
+    }, 300);
+    return () => { clearInterval(t); s.removeEventListener("load", run); };
+  }, [posts]);
+  if (!posts || !posts.length) return null;
+  return (
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "16px", alignItems: "start", justifyItems: "center", margin: "16px 0 40px" }}>
+      {posts.map((url) => (
+        <blockquote
+          key={url}
+          className="instagram-media"
+          data-instgrm-permalink={url}
+          data-instgrm-version="14"
+          style={{ background: "var(--white)", border: 0, borderRadius: "14px", boxShadow: "var(--shadow-md)", margin: 0, width: "100%", maxWidth: "340px", minWidth: "240px" }}
+        ></blockquote>
+      ))}
+    </div>
+  );
+}
+
 function Gallery() {
   const tiles = D2.gallery.map((g, i) => ({ src: g, href: D2.instagram, alt: `Diseño ${i + 1}` }));
   return (
@@ -94,6 +131,10 @@ function Gallery() {
             </a>
           ))}
         </div>
+        <div style={{ textAlign: "center", margin: "0 0 8px" }}>
+          <span style={{ fontFamily: "var(--font-sans)", fontSize: "12px", letterSpacing: "0.28em", textTransform: "uppercase", color: "var(--rose-200)" }}>Desde nuestro Instagram</span>
+        </div>
+        <InstagramEmbeds posts={D2.instagramPosts} />
         <div style={{ textAlign: "center" }}>
           <SRButton2 variant="outline" size="md" href={D2.instagram} target="_blank" rel="noopener"
             style={{ color: "var(--rose-100)", borderColor: "var(--rose-300)" }}>

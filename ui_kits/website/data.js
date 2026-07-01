@@ -6,6 +6,18 @@
   const CDN = "https://d375139ucebi94.cloudfront.net/region2/es/113413";
   window.SR_DATA = {
     booksyUrl: "https://booksy.com/es-es/113413_nails-and-beauty-by-silvia-rojano_salon-de-unas_68787_portol",
+    // Enlace corto de Booksy: en móvil abre la app si está instalada (o la tienda si no).
+    booksyApp: "https://cdl.booksy.com/911oHUKfxMb",
+    // En móvil usamos el enlace de la app; en escritorio el perfil web directo
+    // (el enlace corto en escritorio lleva a la home de Booksy, no al salón).
+    bookingUrl: function () {
+      try {
+        var ua = navigator.userAgent || "";
+        var isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(ua) ||
+          (navigator.maxTouchPoints > 1 && /Macintosh/i.test(ua));
+        return isMobile ? this.booksyApp : this.booksyUrl;
+      } catch (e) { return this.booksyUrl; }
+    },
     instagram: "https://www.instagram.com/nailsbysilviarojano",
     // ── Galería en vivo desde Instagram ──────────────────────────────
     // Pega aquí tu ID de feed de Behold.so (gratis, actualización automática).

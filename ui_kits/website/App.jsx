@@ -16,7 +16,7 @@ function BookingModal({ open, onClose }) {
           Te llevamos a la pasarela de Booksy para elegir fecha, hora y confirmar tu cita con disponibilidad en tiempo real.
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <SRButtonApp variant="primary" size="lg" full href={DApp.booksyUrl} target="_blank" rel="noopener">Continuar en Booksy →</SRButtonApp>
+          <SRButtonApp variant="primary" size="lg" full href={DApp.bookingUrl()} target="_blank" rel="noopener">Continuar en Booksy →</SRButtonApp>
           <SRButtonApp variant="ghost" size="sm" full onClick={onClose}>Ahora no</SRButtonApp>
         </div>
       </div>

@@ -44,7 +44,7 @@ function Booking() {
               </div>
             ))}
           </div>
-          <SRButton3 variant="primary" size="lg" full href={D3.booksyUrl} target="_blank" rel="noopener">Reservar en Booksy →</SRButton3>
+          <SRButton3 variant="primary" size="lg" full href={D3.bookingUrl()} target="_blank" rel="noopener">Reservar en Booksy →</SRButton3>
         </div>
       </div>
     </section>

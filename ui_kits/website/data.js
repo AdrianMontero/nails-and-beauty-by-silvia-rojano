@@ -32,6 +32,12 @@
       CDN + "/inspiration/9bfa8b86309244bb8319ad83dee904-nails-and-beauty-by-silvia-roj-inspiration-a531b9d4594b43059441f02ab968c2-booksy.jpeg?size=640x0",
       CDN + "/inspiration/b960f718ed2b40e9a5b95b3a31bae5-nails-and-beauty-by-silvia-roj-inspiration-e3ffc63e43224f4490d40391af256b-booksy.jpeg?size=640x0",
       CDN + "/inspiration/d50002a566274e4ba9a2b5998a257b-nails-and-beauty-by-silvia-roj-inspiration-95f71c0affcb4aa3ab0dce97a5803a-booksy.jpeg?size=640x0",
+      // Fotos de Instagram (@nailsbysilviarojano) descargadas y alojadas en el repo.
+      "gallery/ig1.jpg",
+      "gallery/ig2.jpg",
+      "gallery/ig3.jpg",
+      "gallery/ig4.jpg",
+      "gallery/ig5.jpg",
     ],
     // Booksy service categories (real prices & durations)
     popular: [

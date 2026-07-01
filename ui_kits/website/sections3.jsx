@@ -13,11 +13,18 @@ function Booking() {
             Elige tu servicio y confirma en segundos a través de Booksy, con disponibilidad en tiempo real.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginTop: "8px" }}>
-            {[["pin", D3.address], ["clock", "Mar–Sáb · 9:30 – 20:00"], ["phone", "Cita previa · WhatsApp"]].map(([ic, t]) => (
-              <div key={t} style={{ display: "flex", alignItems: "center", gap: "12px", fontFamily: "var(--font-sans)", fontSize: "14px" }}>
-                <Icon name={ic} size={18} color="var(--rose-100)" /> {t}
-              </div>
-            ))}
+            {[
+              { ic: "pin", t: D3.address },
+              { ic: "clock", t: "Mar–Sáb · 9:30 – 20:00" },
+              { ic: "phone", t: D3.phone, href: D3.phoneHref },
+              { ic: "mail", t: D3.email, href: "mailto:" + D3.email },
+            ].map(({ ic, t, href }) => {
+              const rowStyle = { display: "flex", alignItems: "center", gap: "12px", fontFamily: "var(--font-sans)", fontSize: "14px", color: "inherit", textDecoration: "none" };
+              const inner = (<><Icon name={ic} size={18} color="var(--rose-100)" /> {t}</>);
+              return href
+                ? <a key={t} href={href} style={rowStyle}>{inner}</a>
+                : <div key={t} style={rowStyle}>{inner}</div>;
+            })}
           </div>
         </div>
         <div style={{ padding: "clamp(36px,5vw,48px)", display: "flex", flexDirection: "column", justifyContent: "center", gap: "22px", textAlign: "center" }}>

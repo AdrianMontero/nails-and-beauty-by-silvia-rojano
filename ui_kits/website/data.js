@@ -24,6 +24,9 @@
       "https://www.instagram.com/p/CYcatnXjsaA/",
     ],
     address: "Carrer Gladiol, 07141, Marratxí",
+    phone: "+34 619 51 36 29",
+    phoneHref: "tel:+34619513629",
+    email: "silvia.rojano@hotmail.com",
     hero: CDN + "/biz_photo/cdb813ba5bfd45b1b0db9497e64d5b-nails-and-beauty-by-silvia-roj-biz-photo-f37566cf147d419c909fe013ad1fb1-booksy.jpeg",
     gallery: [
       CDN + "/inspiration/7b6d90c79aab40f091caeae316e3a9-nails-and-beauty-by-silvia-roj-inspiration-041eac82651048feacf8115e52e5b6-booksy.jpeg?size=640x0",

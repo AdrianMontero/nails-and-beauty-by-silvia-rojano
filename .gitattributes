@@ -1,0 +1,13 @@
+# Treat binary assets as binary — never apply line-ending (CRLF/LF) conversion.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.ico  binary
+*.webp binary
+*.eps  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary

@@ -1,0 +1,61 @@
+/* ============================================================
+   COLOR TOKENS — Silvia Rojano Beauty & Nails
+   Derived from the SR butterfly logo + AdobeColor palette.
+   Rose is the brand hero; gold is the special-moment accent.
+   ============================================================ */
+:root {
+  /* — Blush neutrals (warm, pink-tinted whites → soft greys) — */
+  --blush-50:  #FFFBFD;   /* page base, almost white */
+  --blush-100: #FFF4FA;   /* raised surface tint */
+  --blush-150: #FFE8FF;   /* palette: soft lavender-blush */
+  --blush-200: #FDDEE4;   /* logo backdrop pink */
+  --blush-300: #F9CFE0;   /* hairline / divider on pink */
+
+  /* — Rose (brand hero, sampled from the SR monogram) — */
+  --rose-100: #F7BCF2;    /* palette: light orchid pink */
+  --rose-200: #EFA9CE;
+  --rose-300: #E48FB4;
+  --rose-400: #D694BD;    /* palette: mauve rose */
+  --rose-500: #C96A8A;    /* PRIMARY brand rose */
+  --rose-600: #B15476;    /* hover / pressed */
+  --rose-700: #8E4260;    /* deep rose, strong text on blush */
+
+  /* — Gold (accent: pricing, awards, fine detail) — */
+  --gold-300: #F2C94C;
+  --gold-400: #E3AD00;    /* palette: warm gold */
+  --gold-600: #855500;    /* palette: bronze, gold text */
+
+  /* — Ink (plum-brown text, never pure black) — */
+  --ink-900: #3A2430;     /* headings / primary text */
+  --ink-700: #5E4450;     /* body text */
+  --ink-500: #8B707B;     /* secondary / captions */
+  --ink-300: #C3AEB7;     /* disabled / placeholder */
+
+  --white: #FFFFFF;
+
+  /* — Support / status (kept muted & on-brand) — */
+  --success: #6E9C7A;
+  --error:   #C25B5B;
+
+  /* ---------- Semantic aliases ---------- */
+  --bg-page:        var(--blush-50);
+  --bg-blush:       var(--blush-100);
+  --bg-blush-deep:  var(--blush-200);
+  --surface-card:   var(--white);
+  --surface-inverse: var(--ink-900);
+
+  --brand:          var(--rose-500);
+  --brand-hover:    var(--rose-600);
+  --brand-soft:     var(--rose-100);
+  --accent:         var(--gold-400);
+  --accent-text:    var(--gold-600);
+
+  --text-primary:   var(--ink-900);
+  --text-body:      var(--ink-700);
+  --text-muted:     var(--ink-500);
+  --text-on-brand:  var(--white);
+
+  --border-soft:    var(--blush-300);
+  --border-line:    #EAD9E1;
+  --focus-ring:     color-mix(in srgb, var(--rose-500) 45%, transparent);
+}

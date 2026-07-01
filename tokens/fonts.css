@@ -1,0 +1,10 @@
+/* ============================================================
+   FONTS — Silvia Rojano Beauty & Nails
+   Cormorant Garamond  → elegant high-contrast display serif,
+                          echoes the SR monogram's Didone letters.
+   Jost                → geometric sans for wide-tracked labels
+                          & clean body copy (the wordmark voice).
+   Loaded from Google Fonts. If you have licensed brand fonts,
+   drop the files in assets/fonts/ and swap these @import lines.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');

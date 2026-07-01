@@ -1,0 +1,33 @@
+/* ============================================================
+   EFFECTS TOKENS — radii, shadows, borders, motion
+   Silvia Rojano Beauty & Nails
+   Soft, rounded, feminine. Shadows are low & rose-tinted —
+   never hard black. Radii lean generous.
+   ============================================================ */
+:root {
+  /* Corner radii */
+  --radius-xs:  6px;
+  --radius-sm:  10px;
+  --radius-md:  16px;
+  --radius-lg:  24px;
+  --radius-xl:  36px;
+  --radius-pill: 999px;
+
+  /* Shadows — warm rose-plum tint, soft & diffuse */
+  --shadow-xs: 0 1px 2px rgba(58, 36, 48, 0.05);
+  --shadow-sm: 0 4px 14px rgba(201, 106, 138, 0.10);
+  --shadow-md: 0 12px 34px rgba(150, 70, 100, 0.14);
+  --shadow-lg: 0 26px 60px rgba(120, 55, 85, 0.18);
+  --shadow-gold: 0 10px 30px rgba(227, 173, 0, 0.22);
+
+  /* Borders */
+  --border-hairline: 1px solid var(--border-line);
+  --border-soft-1:   1px solid var(--border-soft);
+
+  /* Motion */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);  /* @kind other */
+  --dur-fast:  160ms; /* @kind other */
+  --dur-base:  260ms; /* @kind other */
+  --dur-slow:  460ms; /* @kind other */
+}

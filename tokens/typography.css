@@ -1,0 +1,40 @@
+/* ============================================================
+   TYPOGRAPHY TOKENS — Silvia Rojano Beauty & Nails
+   Serif for display & headings, geometric sans for UI & body.
+   Wide letter-spacing on caps labels = the elegant salon voice.
+   ============================================================ */
+:root {
+  --font-serif: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans:  "Jost", "Helvetica Neue", Arial, sans-serif;
+
+  /* Font weights */
+  --fw-light:   300; /* @kind font */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium:  500; /* @kind font */
+  --fw-semibold:600; /* @kind font */
+  --fw-bold:    700; /* @kind font */
+
+  /* Type scale (fluid-friendly px baseline) */
+  --fs-display:  clamp(3rem, 6vw, 5rem);   /* @kind font */
+  --fs-h1:       3rem;      /* @kind font */
+  --fs-h2:       2.25rem;   /* @kind font */
+  --fs-h3:       1.625rem;  /* @kind font */
+  --fs-h4:       1.25rem;   /* @kind font */
+  --fs-lead:     1.25rem;   /* @kind font */
+  --fs-body:     1rem;      /* @kind font */
+  --fs-sm:       0.875rem;  /* @kind font */
+  --fs-label:    0.75rem;   /* @kind font */
+  --fs-xs:       0.6875rem; /* @kind font */
+
+  /* Line heights */
+  --lh-tight:  1.05; /* @kind font */
+  --lh-snug:   1.2;  /* @kind font */
+  --lh-normal: 1.5;  /* @kind font */
+  --lh-relaxed:1.7;  /* @kind font */
+
+  /* Letter spacing — the signature tracked-caps look */
+  --ls-hero:   0.02em; /* @kind font */
+  --ls-label:  0.28em; /* @kind font */
+  --ls-caps:   0.16em; /* @kind font */
+  --ls-body:   0.005em;/* @kind font */
+}

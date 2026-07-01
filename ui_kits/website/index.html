@@ -32,6 +32,10 @@
     #sobre div[style*="1fr 1fr"] { grid-template-columns: 1fr 1fr !important; }
     #galeria div[style*="grid-template-columns"] { grid-template-columns: 1fr 1fr !important; }
     #galeria a[style*="span 2"] { grid-column: auto !important; grid-row: auto !important; }
+    /* Footer: keep Servicios y Salón lado a lado; marca y Reservas a ancho completo */
+    footer > div > div[style*="grid-template-columns"] { grid-template-columns: 1fr 1fr !important; gap: 28px 24px !important; }
+    footer > div > div[style*="grid-template-columns"] > div:first-child,
+    footer > div > div[style*="grid-template-columns"] > div:last-child { grid-column: 1 / -1 !important; }
   }
 </style>
 </head>

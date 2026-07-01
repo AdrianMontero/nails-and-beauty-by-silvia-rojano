@@ -21,9 +21,9 @@ function Header({ onBook }) {
     <header style={{ position: "sticky", top: 0, zIndex: 50, background: "rgba(255,251,253,0.82)", backdropFilter: "blur(14px)", borderBottom: "1px solid var(--border-line)" }}>
       <div style={{ maxWidth: "var(--container)", margin: "0 auto", padding: "14px var(--gutter)", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "32px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "36px" }}>
-          <a href="#top" style={{ display: "flex", alignItems: "center" }}>
+          <a href="#top" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "68px", height: "68px", background: "var(--blush-200)", borderRadius: "16px", flexShrink: 0 }}>
             <img src="../../assets/logo/logo-sr.svg" alt="Silvia Rojano Beauty & Nails"
-              style={{ height: "64px", width: "auto", display: "block" }} />
+              style={{ height: "52px", width: "auto", display: "block" }} />
           </a>
           <nav style={{ display: "flex", gap: "28px" }}>
             {links.map(([t, h]) => (

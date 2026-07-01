@@ -35,7 +35,7 @@
       "https://www.instagram.com/p/CpqfKQ0j8_h/",
       "https://www.instagram.com/p/CYcatnXjsaA/",
     ],
-    address: "Carrer Gladiol, 07141, Marratxí",
+    address: "Carrer Gerani esquina Gladiol, local 12F, 1ª planta, 07141 Marratxí",
     phone: "+34 619 51 36 29",
     phoneHref: "tel:+34619513629",
     email: "silvia.rojano@hotmail.com",

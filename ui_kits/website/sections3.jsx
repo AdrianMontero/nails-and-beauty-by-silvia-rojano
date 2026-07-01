@@ -1,9 +1,8 @@
 /* Booking CTA, Contact, Footer — Silvia Rojano website UI kit. */
-const { Button: SRButton3, Input: SRInput, Select: SRSelect, SectionHeading: SRHeading3 } = window.SilviaRojanoBeautyNailsDesignSystem_99492d;
+const { Button: SRButton3 } = window.SilviaRojanoBeautyNailsDesignSystem_99492d;
 const D3 = window.SR_DATA;
 
-function Booking({ onBook }) {
-  const serviceOptions = D3.categories.map((c) => c.label);
+function Booking() {
   return (
     <section id="contacto" style={{ padding: "clamp(56px,8vw,110px) var(--gutter)", background: "linear-gradient(180deg, var(--bg-page), var(--blush-100))" }}>
       <div style={{ maxWidth: "980px", margin: "0 auto", background: "var(--surface-card)", borderRadius: "var(--radius-xl)", boxShadow: "var(--shadow-lg)", border: "1px solid var(--border-line)", overflow: "hidden", display: "grid", gridTemplateColumns: "1fr 1fr" }}>
@@ -21,15 +20,25 @@ function Booking({ onBook }) {
             ))}
           </div>
         </div>
-        <form onSubmit={(e) => { e.preventDefault(); onBook(); }} style={{ padding: "44px", display: "flex", flexDirection: "column", gap: "18px" }}>
-          <SRInput label="Nombre" placeholder="Tu nombre" required />
-          <SRSelect label="Servicio" placeholder="Elige un servicio" options={serviceOptions} />
-          <SRInput label="Teléfono" type="tel" placeholder="600 000 000" />
-          <SRButton3 variant="primary" size="lg" full as="button">Continuar en Booksy →</SRButton3>
-          <p style={{ fontFamily: "var(--font-sans)", fontSize: "12px", color: "var(--ink-500)", textAlign: "center", margin: 0 }}>
-            Te redirigimos a Booksy para elegir fecha y hora.
-          </p>
-        </form>
+        <div style={{ padding: "clamp(36px,5vw,48px)", display: "flex", flexDirection: "column", justifyContent: "center", gap: "22px", textAlign: "center" }}>
+          <span style={{ display: "inline-flex", alignSelf: "center", width: "64px", height: "64px", borderRadius: "50%", background: "var(--brand-soft)", alignItems: "center", justifyContent: "center" }}>
+            <Icon name="calendar" size={30} color="var(--rose-600)" />
+          </span>
+          <div>
+            <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "1.7rem", fontWeight: 500, color: "var(--ink-900)", margin: "0 0 10px" }}>Reserva online en Booksy</h3>
+            <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "15px", lineHeight: 1.65, color: "var(--ink-500)", margin: 0 }}>
+              Consulta la disponibilidad en tiempo real y confirma tu cita en segundos, sin llamadas ni esperas.
+            </p>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", textAlign: "left", width: "100%", maxWidth: "300px", margin: "0 auto" }}>
+            {["Eliges día, hora y servicio", "Disponibilidad en tiempo real", "Confirmación inmediata"].map((t) => (
+              <div key={t} style={{ display: "flex", alignItems: "center", gap: "10px", fontFamily: "var(--font-sans)", fontSize: "14px", color: "var(--ink-700)" }}>
+                <Icon name="check" size={16} color="var(--rose-500)" /> {t}
+              </div>
+            ))}
+          </div>
+          <SRButton3 variant="primary" size="lg" full href={D3.booksyUrl} target="_blank" rel="noopener">Reservar en Booksy →</SRButton3>
+        </div>
       </div>
     </section>
   );
